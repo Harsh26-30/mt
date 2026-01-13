@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Caveat", cursive;
+}
+
+:root {
+    --darkColor: rgb(93, 0, 255);
+    --mediumColor: rgb(163, 114, 248);
+    --lighterColor: rgb(204, 252, 252);
+}
+
+body {
+    background-color: var(--lighterColor);
+}
+
+header {
+    background-color: var(--darkColor);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header div h2 {
+    color: var(--lighterColor);
+    cursor: pointer;
+}
+
+main {
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #insideMain {
+    background-color: var(--mediumColor);
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    color: var(--lighterColor);
+    position: relative;
+    border: 3px dashed var(--darkColor);
+}
+
+main #insideMain #loginPage {
+    display: none;
+}
+
+
+main #insideMain #loginPage {
+    width: 100%;
+    height: 100%;
+    padding: 50px 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    gap: 10px;
+}
+
+form input {
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--darkColor);
+}
+
+button {
+    background-color: var(--darkColor);
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--lighterColor);
+}
+
+#error {
+    color: red;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    display: initial;
+    text-align: center;
+}
+
+#noerror {
+    display: none;
+}

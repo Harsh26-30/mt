@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginSignUpPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="loginSignUpPage.css">
+</head>
+
+<body>
+    <header>
+        <h1>MT</h1>
+        <div>
+            <h2 id="login">login</h2>
+            <h2 id="signUp">Sign Up</h2>
+        </div>
+    </header>
+    <main>
+        <div id="insideMain">
+            <div id="loginPage">
+                <form action="/login" method="POST">
+                    <label for="lemail">Email</label>
+                    <input id="lemail" name="email" type="text">
+                    <label for="lpass">Password</label>
+                    <input id="lpass" name="pass" type="password">
+                    <button id="button1">Submit</button>
+                </form>
+            </div>
+            <div id="signUpPage">
+                <form action="/signUp" method="POST">
+                    <label for="name">Name</label>
+                    <input id="name" name="username" type="text">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+                    <label for="pass">Password</label>
+                    <input id="pass" name="pass" type="password">
+                    <button id="button2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="<%= (typeof error !== 'undefined' && error) ? 'error' : 'noerror' %>">
+            <% if (typeof msg !== "undefined" && msg) { %>
+                <h3 id="error">
+                    <%= msg %>
+                </h3>
+                <% } %>
+        </div>
+    </main>
+
+    <script src="/js/loginSignUpPage.js"></script>
+</body>
+
+</html>
